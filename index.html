@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Intermediario Aula 2 - Inputs Texts, Number, Password e Submit</h1>
+
+    <!--Atributos
+        name: define o nome para fazer busca futura de informações. ex. nome, e-mail, sexo
+        value: determina um valor/nome padrão
+        for:  informa o campo de input que o label pertence atravéz do id
+        id: identificador
+        type radio: cria opções de escolha
+        type text: opção para mostrar apenas texto
+        type number: atributo para permitir digitar apenas numeros, ex. idades
+        type submit: botão que envia as informações
+        type password: mostra caracteres e astericos
+        type checkbox: cria seleções de escolhas
+        placeholder: texto de marcação que aparece como informação ex. Digite seu nome!
+        option: option cria opções com select em parte de uma lista de sugestões.
+        -->
+        <h2>Login</h2>
+    <form>
+        <!-- cria formularios, <form action="processa.php> envia informações para banco de dados"-->
+        Cadastro:<br>
+        <input type="text" name="login"><br>
+
+        Senha:<br>
+        <input type="password"><br>
+        <!-- value é a variavel para BD, "-->
+        <input type="submit" value="Logar"><br><br>
+        <!-- se colocar submit ele envia as informações"-->
+    </form>
+    <hr>
+    <h2>Cadastre-se</h2>
+    <form>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="Login" placeholder="Digite seu nome"><br><br>
+        <label for="numero">Idade</label>
+        <input id="numero" type="number" placeholder="Digite seu idade"> <br><br>
+
+        <!-- radio cria opções de escolhas "-->
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <!--  name com mesma variavel define apenas 1 escolha-->
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        <br>
+
+        <strong>Interesses</strong><br>
+        <br><!-- checkbox cria seleções de escolhas "-->
+        <input type="checkbox" name="Interesses">Futebol<br>
+        <input type="checkbox" name="Interesses">Musicas<br>
+        <input type="checkbox" name="Interesses">Filmes<br>
+        <br>
+
+        <strong>Estados:</strong><br>
+        <select name="estado">
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+            <option value="rs">RS</option>
+
+        </select><br><br>
+
+
+        <strong>Observações:</strong><br>
+        <!--cria area de texto-->
+        <textarea></textarea><br>
+
+        <input type="submit" value="Cadastrar">
+
+    </form>
+</body>
+</html>
